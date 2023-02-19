@@ -1,0 +1,62 @@
+@media (min-width:768px) and (max-width:1200px) {
+    #scoreBox {
+        font-size: 36px;
+        right: 24px;
+    }
+
+    #hiScoreBox {
+        font-size: 30px;
+        right: 8px;
+    }
+    .container{
+        background-color: red;
+
+    }
+    
+}
+
+
+@media  (max-width:768px){
+    
+      #scoreBox {
+        font-size: 36px;
+        right: 200px;
+    }
+
+    #hiScoreBox {
+        font-size: 30px;
+        right: 190px;
+    }
+    #gameOver p{
+        
+    }
+
+    #gameOver button{
+
+    }
+    
+
+}
+
+@media  (max-width:500px){
+    
+      #scoreBox {
+        font-size: 27px;
+        right: 147px;
+    }
+
+    #hiScoreBox {
+        font-size: 24px;
+        right: 139px;
+    }
+    #gameOver p{
+        font-size: 35px;
+    }
+
+    #gameOver button{
+        font-size: 15px;
+        padding: 0.2em 0.1em;
+    }
+    
+
+}

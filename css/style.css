@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+}
+ 
+html{
+  font-size: 62.5%;
+}
+
+body{
+  overflow: hidden;
+}
+
+.container{
+    /* background-image: url(../img/bg.jpg); */
+    background:#3ae374;
+    background-size: 100vw 100vh;
+    background-position: left;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+  position: absolute;
+  top: 40px;
+  right: 100px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#hiScoreBox{
+  position: absolute;
+  top: 90px;
+  right: 60px;
+  font-size: 35px;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#gameOver{
+  visibility: hidden;
+  position: absolute;
+  /* top: 50vh; */
+  /* left: 400px; */
+  background: rgba(255, 255, 255, 0.796);
+  height: 90vmin;
+  width: 90vmin;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#gameOver p{
+  font-size: 55px;
+  font-weight: bold;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-bottom: 3px solid #3ae374;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  margin-bottom: 10px ;
+}
+#gameOver button{
+  font-size: 20px;
+  background-color: #3ae374;
+  font-weight: 600;
+  color:black;
+  border-radius: 1em;
+  padding:.4em 1.2em;
+  cursor: pointer;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  width: 159px;
+  margin: 0 auto;
+
+}
+
+#board{
+background:linear-gradient(#81ecec, #ffeaa7);
+  height: 90vmin;
+  width: 90vmin;
+  border: 3px solid #2c3e50;
+  display: grid;
+  grid-template-rows: repeat(18 , 1fr);
+  grid-template-columns: repeat(18 , 1fr);
+}
+
+.head{
+  /* background:linear-gradient(red,#f1c40f); */
+  background:#fce703;
+  border: .25vmin solid purple;
+  border-radius: 9px;
+  transform: scale(1.02);
+}
+
+.snake{
+  background-color:indigo;
+  border: .30vmin solid rgb(255, 255, 255);
+  border-radius: 11px;
+}
+
+.food{
+  /* background:linear-gradient(red, blue); */
+  background:red;
+  border: .25vmin solid #003468;
+  border-radius: 10px;
+}
