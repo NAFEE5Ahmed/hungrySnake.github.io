@@ -8,11 +8,6 @@
         font-size: 30px;
         right: 8px;
     }
-    .container{
-        background-color: red;
-
-    }
-    
 }
 
 
@@ -27,15 +22,6 @@
         font-size: 30px;
         right: 190px;
     }
-    #gameOver p{
-        
-    }
-
-    #gameOver button{
-
-    }
-    
-
 }
 
 @media  (max-width:500px){
